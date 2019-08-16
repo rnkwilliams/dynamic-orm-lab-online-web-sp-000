@@ -20,8 +20,8 @@ def self.column_names
 end
 
 def initialize(objects={})
-  objects.each do |k, v|
-    self.send("#{k}=", v)
+  objects.each do |key, value|
+    self.send("#{key}=", value)
   end
 end
 
